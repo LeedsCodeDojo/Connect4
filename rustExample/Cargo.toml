@@ -1,0 +1,9 @@
+[package]
+name = "connect4"
+version = "0.1.0"
+authors = ["Adam <adam@hodgen.uk>"]
+
+[dependencies]
+hyper = "0.9"
+rustc-serialize = "0.3"
+rand = "0.3"
