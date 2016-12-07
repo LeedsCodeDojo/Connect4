@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Connect4.ExampleBot.FSharp", "Connect4.ExampleBot.FSharp.fsproj", "{6144C808-81C7-4253-BBA0-CEA61160FFC1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6144C808-81C7-4253-BBA0-CEA61160FFC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6144C808-81C7-4253-BBA0-CEA61160FFC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6144C808-81C7-4253-BBA0-CEA61160FFC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6144C808-81C7-4253-BBA0-CEA61160FFC1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
