@@ -10,21 +10,20 @@ let serverURL = "http://yorkdojoconnect4.azurewebsites.net/";
 
 let playerId = API.RegisterTeam teamName teamPassword serverURL
 
-let MakeMove game =
+let MakeMove game playerId' apiFunc =
     
-    printfn "Press to play"
-    System.Console.ReadKey(true) |> ignore
-
     // PUT YOUR CODE IN HERE
 
     let selectedColumn = 0
-    API.MakeMove playerId serverURL selectedColumn teamPassword  
+    apiFunc playerId' serverURL selectedColumn teamPassword  
     printfn "Played in column %i" selectedColumn
 
 let MakeMoveIfPlayer moveId game =
      if moveId = playerId then 
          try
-            MakeMove game
+            printfn "Press to play"
+            System.Console.ReadKey(true) |> ignore
+            MakeMove game playerId API.MakeMove
          with ex ->
             printfn "%s" ex.Message
         
